@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity1">
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:text="123"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent=".25"
+        />
+
+    <LinearLayout
+        android:id="@+id/firstrow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/result_tv"
+        app:layout_constraintHeight_percent=".15"
+        >
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttontheme"
+            android:onClick="allClearOperator"
+            android:text="C"
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            />
+
+        <Button
+            style="@style/ButtonOpStyle"
+            android:onClick="backSpaceClick"
+            android:text="⌫"/>
+
+        <Button
+            style="@style/ButtonOpStyle"
+
+            android:onClick="onOperatorClick"
+            android:text="÷"
+            android:textColor="@color/green" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/secondrow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/firstrow"
+        app:layout_constraintHeight_percent=".15"
+        >
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="7"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="8"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="9"
+            />
+
+        <Button
+            style="@style/ButtonOpStyle"
+            android:onClick="onOperatorClick"
+            android:text="×"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/thirdrow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/secondrow"
+        app:layout_constraintHeight_percent=".15"
+        >
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="4"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="5"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="6"
+            />
+
+        <Button
+            style="@style/ButtonOpStyle"
+            android:onClick="onOperatorClick"
+            android:text="-"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/forthrow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/thirdrow"
+        app:layout_constraintHeight_percent=".15"
+        >
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="1"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="2"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="3"
+            />
+
+        <Button
+            style="@style/ButtonOpStyle"
+            android:onClick="onOperatorClick"
+            android:text="+"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fifthrow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/forthrow"
+        app:layout_constraintHeight_percent=".15"
+        >
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onOperatorClick"
+            android:text="^"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="0"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="onDigitClick"
+            android:text="."
+            />
+
+        <Button
+            android:onClick="onEqualClick"
+            android:text="="
+            style="@style/ButtonStyle" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
