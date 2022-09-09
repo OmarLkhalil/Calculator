@@ -5,20 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
     tools:context=".MainActivity1">
 
     <TextView
         android:id="@+id/result_tv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        tools:text="123"
-        android:textColor="@color/white"
-        android:textSize="40sp"
-        android:gravity="center_vertical"
+        tools:text="1212313"
+        android:textColor="@color/blue"
+        android:textSize="50sp"
+        android:paddingTop="70dp"
+        android:paddingEnd="20dp"
+        android:textAlignment="textEnd"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHeight_percent=".25"
         />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="56dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/equal"
+        app:layout_constraintBottom_toBottomOf="@+id/result_tv"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
 
     <LinearLayout
         android:id="@+id/firstrow"
@@ -36,17 +51,17 @@
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="1"
-            android:background="@drawable/buttontheme"
+            android:background="@drawable/buttonbg"
             android:onClick="allClearOperator"
             android:text="C"
             android:textColor="@color/red"
             android:textSize="30sp" />
 
         <Button
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/white"
             />
 
         <Button
@@ -56,10 +71,9 @@
 
         <Button
             style="@style/ButtonOpStyle"
-
             android:onClick="onOperatorClick"
             android:text="÷"
-            android:textColor="@color/green" />
+            />
 
     </LinearLayout>
     <LinearLayout

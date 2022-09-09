@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Calculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/grey</item>
+        <item name="colorPrimary">#374352</item>
         <item name="colorPrimaryVariant">@color/grey</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
