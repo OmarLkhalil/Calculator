@@ -11,4 +11,8 @@ very simple calculator as my first kotlin android project
 
 
 I have updated this UI 
+
+
+
+
 ![alt text](https://github.com/OmarLkhalil/Calculator/blob/master/calccscreen.png)
