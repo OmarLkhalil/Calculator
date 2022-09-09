@@ -13,6 +13,4 @@ very simple calculator as my first kotlin android project
 I have updated this UI 
 
 
-    <img src="https://github.com/OmarLkhalil/Calculator/blob/master/calccscreen.png" width="324" height="500">
-
-
+ <img src="https://github.com/OmarLkhalil/Calculator/blob/master/calccscreen.png" width="324" height="500">
